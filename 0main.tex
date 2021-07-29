@@ -9,7 +9,7 @@
 %%  sPHENIX TDR Editor: John Haggerty (haggerty@bnl.gov)
 
                            
-\documentclass[12pt,twoside,notitlepage]{book}
+\documentclass[12pt,twoside]{article}
 
 %%%%%%%%%%%%%%%%
 % Adding the include only list allows you to typeset only your
@@ -24,59 +24,39 @@
 
 \begin{document}
 \linenumbers
-\frontmatter
+%\frontmatter
 \pagestyle{empty}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% title page
 \include{title_page}
 
-\cleardoublepage
-\pagestyle{fancy}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% exec_summ
-
-\chapter*{Executive Summary}
-\label{exec_summ}
-\include{exec_summ/exec_summ}
+%\cleardoublepage
+%\pagestyle{fancy}
 
 \setcounter{page}{1}
 
-\clearpage
+%\clearpage
 %\cleardoublepage
 
-\resetlinenumber
+%\resetlinenumber
 
 \tableofcontents
-\cleardoublepage
+%\cleardoublepage
 
-\mainmatter
+%\mainmatter
 
 \renewcommand{\thepage}{\arabic{page}}
-\setcounter{chapter}{0}
-\setcounter{page}{1}
+%\setcounter{chapter}{0}
+%\setcounter{page}{1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2 Detector Overview
-\chapter {Detector Overview}
+\section {Detector Overview}
 \label{det_overview}
-\include{det_overview/det_overview}
- 
- 
-\cleardoublepage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tables
-\phantomsection
-\addcontentsline{toc}{chapter}{List of Tables}
-\listoftables
+\include{det_overview}
 
-\cleardoublepage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Figures
-\phantomsection
-\addcontentsline{toc}{chapter}{List of Figures}
-\listoffigures
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% References
-\cleardoublepage
-\phantomsection
-\addcontentsline{toc}{chapter}{References}
+\section {Section 2}
+\label{section2}
+\include{section2}
 
 \listoftodos[To Do]
 
