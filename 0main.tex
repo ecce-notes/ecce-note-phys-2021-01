@@ -1,0 +1,86 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                              %
+%      sPHENIX Technical Design Report at CD2 -- 2019          %
+%             open for writing 2019.02.01
+%             deadline to complete 2019.03.11
+%                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%  sPHENIX TDR Editor: John Haggerty (haggerty@bnl.gov)
+
+                           
+\documentclass[12pt,twoside,notitlepage]{book}
+
+%%%%%%%%%%%%%%%%
+% Adding the include only list allows you to typeset only your
+% chapter while maintaining overall page numbers and references.
+% It also shields you from errors in other chapters as you go along.
+% You need to typeset the whole thing once though. 
+
+%\includeonly{title_page,daq_trig/daq_trig}
+
+%%%%%%%%%%%%%%%%%%  header  (packages, 
+\input{header}
+
+\begin{document}
+\linenumbers
+\frontmatter
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% title page
+\include{title_page}
+
+\cleardoublepage
+\pagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% exec_summ
+
+\chapter*{Executive Summary}
+\label{exec_summ}
+\include{exec_summ/exec_summ}
+
+\setcounter{page}{1}
+
+\clearpage
+%\cleardoublepage
+
+\resetlinenumber
+
+\tableofcontents
+\cleardoublepage
+
+\mainmatter
+
+\renewcommand{\thepage}{\arabic{page}}
+\setcounter{chapter}{0}
+\setcounter{page}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2 Detector Overview
+\chapter {Detector Overview}
+\label{det_overview}
+\include{det_overview/det_overview}
+ 
+ 
+\cleardoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tables
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+\cleardoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Figures
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% References
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+
+\listoftodos[To Do]
+
+\bibliographystyle{unsrturl}
+\bibliography{refs}
+
+\end{document}  %%%%%%%%%%%%%%%%% End Document
