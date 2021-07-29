@@ -1,0 +1,28 @@
+\documentclass[11pt,twoside,notitlepage]{book}
+
+%%%%%%%%%%%%%%%%%%  header  (packages,
+\input{../header}
+
+\begin{document}
+
+%\linenumbers
+\frontmatter
+
+\pagestyle{fancy}
+
+\mainmatter
+
+\setcounter{chapter}{0}
+\setcounter{page}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 1 exec_summ
+\chapter*{Executive Summary}
+
+\input{exec_summ}
+
+\bibliographystyle{unsrturl}
+\bibliography{../refs,exec_summ}
+
+\end{document}
+
+%\cleardoublepage

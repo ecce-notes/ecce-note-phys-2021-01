@@ -1,0 +1,16 @@
+SRCS := $(wildcard *.tex *.bib figs/*.png figs/*.pdf )
+
+DATE := $(shell date +%d%m%Y)
+
+default: chapter2.pdf 
+
+chapter2.pdf: $(SRCS) 
+	latexmk -pdf chapter2
+
+debug:
+	pdflatex  chapter2
+	bibtex  chapter2
+	pdflatex  chapter2
+
+clean:
+	latexmk -c
