@@ -8,20 +8,19 @@ A cut on the transverse momentum of $p_T<30$ was applied to reject higher moment
 
 
 % Track jet momentum scale and resolution
-\todo{regenerate plots as PDF}
 \begin{figure}
     \centering
     \begin{subfigure}{0.4\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figs/jet_plots/pScale_track_grouped.png}
-        \caption{Track jets scale}
+        \includegraphics[width=\linewidth]{figs/Final_Plots/pScale_track_grouped.pdf}
+        \caption{Track jets scale.  The scale is a measure of how much of the momentum of a truth track was reconstructed.  If all the momentum was measured, the scale would be 0, which is the ideal case.  The scale shown is still very good, and as long as it is well characterized it can be corrected for with calibrations.  }
         \label{fig:track_momentum_scale}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.4\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figs/jet_plots/pReso_track_grouped.png}
-        \caption{Track jet resolution}
+        \includegraphics[width=\linewidth]{figs/Final_Plots/pReso_track_grouped.pdf}
+        \caption{Track jet resolution.  The resolution is the standard deviation of the spectra of reconstructed jet momentum for a particular truth energy.  The closer the value to zero, the more confidence we have that the value is as measured.  For track jets, we anticipate the resolution to get worse as we go up in momentum, since it becomes harder for the tracking system to distinguish the momentum of the track.}
         \label{fig:track_momentum_resolution}
     \end{subfigure}
     \caption{The scale and resolution of the momentum of track jets.}
@@ -35,18 +34,18 @@ As seen in figure \ref{fig:track_momentum_scale}, the scale is better than -0.15
     \centering
     \begin{subfigure}{0.4\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figs/jet_plots/EtaReso_track_grouped.png}
+        \includegraphics[width=\linewidth]{figs/Final_Plots/EtaReso_track_grouped.pdf}
         \caption{Track jet $\eta$ resolution}
         \label{fig:track_eta_resolution}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.4\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figs/jet_plots/PhiReso_track_grouped.png}
+        \includegraphics[width=\linewidth]{figs/Final_Plots/PhiReso_track_grouped.pdf}
         \caption{Track jet $\phi$ resolution}
         \label{fig:track_phi_resolution}
     \end{subfigure}
-    \caption{The spatial resolution of track jets}
+    \caption{The spatial resolution of track jets.  The resolution in both pseudorapidity and azimuthal angle is very good, which is important for correlating jets to the scattered electron for studying parton kinematics.  }
     \label{fig:track_spatial_reso_scale}
 \end{figure}
 

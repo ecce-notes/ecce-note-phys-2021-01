@@ -1,20 +1,26 @@
 In addition to finding jets in the tracking system, we can take advantage of ECCE's calorimetry systems for jet analysis.  Like in the tracking analysis, this was done with 18x275 GeV Pythia 8 electron proton collisions with a $Q^2>100\hbox{ GeV}^2$ on the prop.4 configuration.  Once again, the anti-$k_T$ jet finding algorithm was used with a jet radius $R=0.5$ with the constraint $z<0.95$.  
 
-To improve the collection of energy in the calorimeters, the towers are group together with clustering algorithms to try to make each cluster contain all the energy of a particle.  Two algorithms in particular have been utilized in this analysis, V3 and MA clustering.  \todo{expand}
+To improve the collection of energy in the calorimeters, the towers are group together with clustering algorithms to try to make each cluster contain all the energy of a particle.  Two algorithms in particular have been utilized in this analysis, V3 and MA clustering.
+
+V3 clustering is used in \todo{Which detectors?}.  It works by creating a new cluster at the most energetic tower, and adding its cardinal neighbors to it if they have less energy, but still greater than a aggregation energy parameter.  This recurses until all neighboring towers have either less energy than the aggregation energy, or greater than the current tower's energy.
+
+The MA clustering algorithm is similar, except it will for clusters along diagonals as well as the cardinal directions.  It is used in the \todo{which?} calorimeters.  
+
+Tuning clustering algorithms remains an ongoing process, the particular algorithms and parameters are not fixed, and may even be selected depending on the study being done. 
 
 
 \begin{figure}
     \centering
     \begin{subfigure}{0.4\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figs/jet_plots/JES_calo_grouped.png}
+        \includegraphics[width=\linewidth]{figs/Final_Plots/JES_calo_grouped.pdf}
         \caption{Calorimetry jets scale}
         \label{fig:calo_energy_scale}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.4\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figs/jet_plots/JER_E_calo_grouped.png}
+        \includegraphics[width=\linewidth]{figs/Final_Plots/JER_E_calo_grouped.pdf}
         \caption{Calorimetry jet resolution}
         \label{fig:calo_energy_resolution}
     \end{subfigure}
@@ -28,14 +34,14 @@ To improve the collection of energy in the calorimeters, the towers are group to
     \centering
     \begin{subfigure}{0.4\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figs/jet_plots/EtaReso_calo_grouped.png}
+        \includegraphics[width=\linewidth]{figs/Final_Plots/EtaReso_calo_grouped.pdf}
         \caption{Calorimetry jet $\eta$ resolution}
         \label{fig:calo_eta_resolution}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.4\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{figs/jet_plots/PhiReso_calo_grouped.png}
+        \includegraphics[width=\linewidth]{figs/Final_Plots/PhiReso_calo_grouped.pdf}
         \caption{Calorimetry jet $\phi$ resolution}
         \label{fig:calo_phi_resolution}
     \end{subfigure}
