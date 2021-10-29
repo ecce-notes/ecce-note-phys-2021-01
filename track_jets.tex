@@ -1,14 +1,40 @@
-The tracking systems of ECCE allow for the measurement of lower momentum charged jets with excellent scale and resolution.  The analysis was completed with 18x275 GeV Pythia 8 electron proton collisions, requireing a $Q^2$ greater than $100$ GeV, and the prop.4 detector configuration.  The anti-$k_T$ jet finding algorithm was utilized, with a jet radius $R=0.5$.  To prevent the classification of single particles as jets, a constraint of $z<0.95$ as applied, where 
+\section {Track Jets}
+\label{section2}
+
+The tracking systems of ECCE allow for the measurement of lower momentum charged jets with excellent scale and resolution.  The analysis was completed with 18x275 GeV Pythia 8 electron proton collisions, requiring a $Q^2$ greater than $100 \hbox{ GeV}^2$, and the prop.4 detector configuration.  The anti-$k_T$ jet finding algorithm was utilized, with a jet radius $R=0.5$.  To prevent the classification of single particles as jets, a constraint of $z<0.95$ as applied, where 
 \begin{equation}
 z=\frac{E_{\hbox{most energetic constituent}}}{E_{\hbox{total jet}}}.
 \label{eq:jet_z}
 \end{equation}
 
-A cut on the transverse momentum of $p_T<30$ was applied to reject higher momentum tracks being reconstructed at lower momentum.  
+Jets with a transverse momentum of $p_T > 30\hbox{ GeV/c}$ are rejected to stay within the limits of the tracking detectors.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figs/JES_Slice_Plot_EtaBins2_grouped.pdf}
+    \caption{The distribution of the difference between the true and reconstructed momentum for track jets with a true momentum between 10 and 15 GeV/c.  The mean of the distribution determines the momentum scale of the detector, and the standard deviation of the distribution dictates the resolution.}
+    \label{fig:track_momentum_slice}
+\end{figure}
+
+The scale and resolution is extracted from the distribution of 
+
+\begin{equation}
+    \frac{O^{\hbox{reconstructed}}-O^{\hbox{truth}}}{O^{\hbox{truth}}}
+    \label{eq:distribution}
+\end{equation}
+for energy and momentum, and 
+\begin{equation}
+    O^{\hbox{reconstructed}}-O^{\hbox{truth}}
+    \label{eq:distribution}
+\end{equation}
+
+for spatial variables, where $O$ is the observable.  From this distribution, the mean and standard deviation are calculated, corresponding to the scale and resolution respectively of the observable.  To study the response as a function of energy, the spectra was broken into 5 GeV bins, and the scale and resolution calculated for each.  An example of the 10-15 GeV/c bin for tracked jet momentum is shown in figure \ref{fig:track_momentum_slice}.
+
+
 
 
 % Track jet momentum scale and resolution
-\begin{figure}
+\begin{figure}[h]
     \centering
     \begin{subfigure}{0.4\textwidth}
         \centering
@@ -27,10 +53,10 @@ A cut on the transverse momentum of $p_T<30$ was applied to reject higher moment
     \label{fig:track_momentum_reso_scale}
 \end{figure}
 
-As seen in figure \ref{fig:track_momentum_scale}, the scale is better than -0.15 across entire detectors acceptance.  This, in combination with the momentum resolution better than 0.2 as shown in figure \ref{fig:track_momentum_resolution} opens up the ability to study charged jets in great detail, especially in the lower momentum regime.  
+As seen in figure \ref{fig:track_momentum_scale}, the jet momentum scale is better than -0.15 across entire detectors acceptance.  This, in combination with the momentum resolution better than 0.2 as shown in figure \ref{fig:track_momentum_resolution} opens up the ability to study charged jets in great detail, especially those with a momentum below 50 GeV/c.  
 
 % Track jet spatial resolution
-\begin{figure}
+\begin{figure}[h]
     \centering
     \begin{subfigure}{0.4\textwidth}
         \centering
@@ -49,4 +75,4 @@ As seen in figure \ref{fig:track_momentum_scale}, the scale is better than -0.15
     \label{fig:track_spatial_reso_scale}
 \end{figure}
 
-In addition to the excellent momentum scale and resolution the ECCE tracking system offers, the detector offers very good spatial resolution of jets (Figure \ref{fig:track_spatial_reso_scale}).  
+In addition to the excellent momentum scale and resolution the ECCE tracking system offers, the detector offers very good spatial resolution of jets (Figure \ref{fig:track_spatial_reso_scale}).  \todo{this will enable the study of ...?}  

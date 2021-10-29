@@ -1,10 +1,15 @@
-In addition to finding jets in the tracking system, we can take advantage of ECCE's calorimetry systems for jet analysis.  Like in the tracking analysis, this was done with 18x275 GeV Pythia 8 electron proton collisions with a $Q^2>100\hbox{ GeV}^2$ on the prop.4 configuration.  Once again, the anti-$k_T$ jet finding algorithm was used with a jet radius $R=0.5$ with the constraint $z<0.95$.  
+\section{Calorimetry Jets}
+\label{calo_jets}
 
-To improve the collection of energy in the calorimeters, the towers are group together with clustering algorithms to try to make each cluster contain all the energy of a particle.  Two algorithms in particular have been utilized in this analysis, V3 and MA clustering.
+In addition to finding jets in the tracking system, ECCE's full hermetic coverage can be used to measure the energy of the charged and neutral fraction of jets.  Like in the tracking analysis, this was done with 18x275 GeV Pythia 8 electron proton collisions with a $Q^2>100\hbox{ GeV}^2$ in the prop.4 configuration.  Once again, the anti-$k_T$ jet finding algorithm was used with a jet radius $R=0.5$ with the constraint $z<0.95$.  The electromagnetic and hadronic calorimeters are used together to identify jets.
+
+To improve the collection of energy in the calorimeters, the towers are group together with clustering algorithms to try to make each cluster contain all the energy of a single particle.  Two algorithms in particular have been utilized in this analysis, V3 and MA clustering.
 
 V3 clustering is used in \todo{Which detectors?}.  It works by creating a new cluster at the most energetic tower, and adding its cardinal neighbors to it if they have less energy, but still greater than a aggregation energy parameter.  This recurses until all neighboring towers have either less energy than the aggregation energy, or greater than the current tower's energy.
 
 The MA clustering algorithm is similar, except it will for clusters along diagonals as well as the cardinal directions.  It is used in the \todo{which?} calorimeters.  
+
+Both algorithms create clusters which contain the total energy accumulated among the clustered towers and has a position given by the position of each tower weighted by its energy contribution.  These clusters are then used as the input of the jet finding algorithm.  
 
 Tuning clustering algorithms remains an ongoing process, the particular algorithms and parameters are not fixed, and may even be selected depending on the study being done. 
 
