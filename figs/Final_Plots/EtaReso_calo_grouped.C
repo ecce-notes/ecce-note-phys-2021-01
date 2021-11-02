@@ -1,7 +1,7 @@
 void EtaReso_calo_grouped()
 {
 //=========Macro generated from canvas: canvasJES/
-//=========  (Mon Oct 18 19:34:42 2021) by ROOT version 6.22/02
+//=========  (Mon Nov  1 23:44:48 2021) by ROOT version 6.22/02
    TCanvas *canvasJES = new TCanvas("canvasJES", "",1,1,1000,876);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -23,7 +23,7 @@ void EtaReso_calo_grouped()
    scaleHist_copy__773->SetLineWidth(2);
    scaleHist_copy__773->SetMarkerStyle(20);
    scaleHist_copy__773->SetMarkerSize(1.2);
-   scaleHist_copy__773->GetXaxis()->SetTitle("p^{jet} (GeV/c)");
+   scaleHist_copy__773->GetXaxis()->SetTitle("E^{jet} (GeV)");
    scaleHist_copy__773->GetXaxis()->SetRange(1,1000);
    scaleHist_copy__773->GetXaxis()->SetMoreLogLabels();
    scaleHist_copy__773->GetXaxis()->SetNoExponent();
@@ -66,11 +66,11 @@ void EtaReso_calo_grouped()
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
-   ci = TColor::GetColor("#00cc00");
+   ci = TColor::GetColor("#0000ff");
    h_EtaReso_Width_calo_E_15__774->SetLineColor(ci);
    h_EtaReso_Width_calo_E_15__774->SetLineWidth(2);
 
-   ci = TColor::GetColor("#00cc00");
+   ci = TColor::GetColor("#0000ff");
    h_EtaReso_Width_calo_E_15__774->SetMarkerColor(ci);
    h_EtaReso_Width_calo_E_15__774->SetMarkerStyle(28);
    h_EtaReso_Width_calo_E_15__774->SetMarkerSize(1.5);
@@ -175,11 +175,11 @@ void EtaReso_calo_grouped()
    h_EtaReso_Width_calo_E_16__775->SetEntries(40);
    h_EtaReso_Width_calo_E_16__775->SetStats(0);
 
-   ci = TColor::GetColor("#669966");
+   ci = TColor::GetColor("#ff0000");
    h_EtaReso_Width_calo_E_16__775->SetLineColor(ci);
    h_EtaReso_Width_calo_E_16__775->SetLineWidth(2);
 
-   ci = TColor::GetColor("#669966");
+   ci = TColor::GetColor("#ff0000");
    h_EtaReso_Width_calo_E_16__775->SetMarkerColor(ci);
    h_EtaReso_Width_calo_E_16__775->SetMarkerStyle(30);
    h_EtaReso_Width_calo_E_16__775->SetMarkerSize(1.8);
@@ -258,11 +258,11 @@ void EtaReso_calo_grouped()
    h_EtaReso_Width_calo_E_17__776->SetEntries(40);
    h_EtaReso_Width_calo_E_17__776->SetStats(0);
 
-   ci = TColor::GetColor("#00cccc");
+   ci = TColor::GetColor("#cc00ff");
    h_EtaReso_Width_calo_E_17__776->SetLineColor(ci);
    h_EtaReso_Width_calo_E_17__776->SetLineWidth(2);
 
-   ci = TColor::GetColor("#00cccc");
+   ci = TColor::GetColor("#cc00ff");
    h_EtaReso_Width_calo_E_17__776->SetMarkerColor(ci);
    h_EtaReso_Width_calo_E_17__776->SetMarkerStyle(42);
    h_EtaReso_Width_calo_E_17__776->SetMarkerSize(1.8);
@@ -344,7 +344,7 @@ tex->SetNDC();
    scaleHist__777->SetLineWidth(2);
    scaleHist__777->SetMarkerStyle(20);
    scaleHist__777->SetMarkerSize(1.2);
-   scaleHist__777->GetXaxis()->SetTitle("p^{jet} (GeV/c)");
+   scaleHist__777->GetXaxis()->SetTitle("E^{jet} (GeV)");
    scaleHist__777->GetXaxis()->SetRange(1,1000);
    scaleHist__777->GetXaxis()->SetMoreLogLabels();
    scaleHist__777->GetXaxis()->SetNoExponent();

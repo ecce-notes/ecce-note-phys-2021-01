@@ -1,7 +1,7 @@
 void JES_calo_grouped()
 {
 //=========Macro generated from canvas: canvasJES/
-//=========  (Mon Oct 18 19:34:41 2021) by ROOT version 6.22/02
+//=========  (Mon Nov  1 23:38:20 2021) by ROOT version 6.22/02
    TCanvas *canvasJES = new TCanvas("canvasJES", "",1,1,1000,876);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -69,11 +69,11 @@ void JES_calo_grouped()
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
-   ci = TColor::GetColor("#00cc00");
+   ci = TColor::GetColor("#0000ff");
    h_JES_calo_E_15__70->SetLineColor(ci);
    h_JES_calo_E_15__70->SetLineWidth(2);
 
-   ci = TColor::GetColor("#00cc00");
+   ci = TColor::GetColor("#0000ff");
    h_JES_calo_E_15__70->SetMarkerColor(ci);
    h_JES_calo_E_15__70->SetMarkerStyle(28);
    h_JES_calo_E_15__70->SetMarkerSize(1.5);
@@ -177,11 +177,11 @@ void JES_calo_grouped()
    h_JES_calo_E_16__71->SetEntries(40);
    h_JES_calo_E_16__71->SetStats(0);
 
-   ci = TColor::GetColor("#669966");
+   ci = TColor::GetColor("#ff0000");
    h_JES_calo_E_16__71->SetLineColor(ci);
    h_JES_calo_E_16__71->SetLineWidth(2);
 
-   ci = TColor::GetColor("#669966");
+   ci = TColor::GetColor("#ff0000");
    h_JES_calo_E_16__71->SetMarkerColor(ci);
    h_JES_calo_E_16__71->SetMarkerStyle(30);
    h_JES_calo_E_16__71->SetMarkerSize(1.8);
@@ -260,11 +260,11 @@ void JES_calo_grouped()
    h_JES_calo_E_17__72->SetEntries(40);
    h_JES_calo_E_17__72->SetStats(0);
 
-   ci = TColor::GetColor("#00cccc");
+   ci = TColor::GetColor("#cc00ff");
    h_JES_calo_E_17__72->SetLineColor(ci);
    h_JES_calo_E_17__72->SetLineWidth(2);
 
-   ci = TColor::GetColor("#00cccc");
+   ci = TColor::GetColor("#cc00ff");
    h_JES_calo_E_17__72->SetMarkerColor(ci);
    h_JES_calo_E_17__72->SetMarkerStyle(42);
    h_JES_calo_E_17__72->SetMarkerSize(1.8);

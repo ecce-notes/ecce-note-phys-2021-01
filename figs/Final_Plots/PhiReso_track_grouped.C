@@ -1,7 +1,7 @@
 void PhiReso_track_grouped()
 {
 //=========Macro generated from canvas: canvasJES/
-//=========  (Mon Oct 18 19:34:42 2021) by ROOT version 6.22/02
+//=========  (Mon Nov  1 23:38:21 2021) by ROOT version 6.22/02
    TCanvas *canvasJES = new TCanvas("canvasJES", "",0,0,1000,900);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -62,11 +62,11 @@ void PhiReso_track_grouped()
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
-   ci = TColor::GetColor("#00cc00");
+   ci = TColor::GetColor("#0000ff");
    h_PhiReso_Width_track_E_15__857->SetLineColor(ci);
    h_PhiReso_Width_track_E_15__857->SetLineWidth(2);
 
-   ci = TColor::GetColor("#00cc00");
+   ci = TColor::GetColor("#0000ff");
    h_PhiReso_Width_track_E_15__857->SetMarkerColor(ci);
    h_PhiReso_Width_track_E_15__857->SetMarkerStyle(28);
    h_PhiReso_Width_track_E_15__857->SetMarkerSize(1.5);
@@ -119,11 +119,11 @@ void PhiReso_track_grouped()
    h_PhiReso_Width_track_E_16__858->SetEntries(40);
    h_PhiReso_Width_track_E_16__858->SetStats(0);
 
-   ci = TColor::GetColor("#669966");
+   ci = TColor::GetColor("#ff0000");
    h_PhiReso_Width_track_E_16__858->SetLineColor(ci);
    h_PhiReso_Width_track_E_16__858->SetLineWidth(2);
 
-   ci = TColor::GetColor("#669966");
+   ci = TColor::GetColor("#ff0000");
    h_PhiReso_Width_track_E_16__858->SetMarkerColor(ci);
    h_PhiReso_Width_track_E_16__858->SetMarkerStyle(30);
    h_PhiReso_Width_track_E_16__858->SetMarkerSize(1.8);
@@ -180,11 +180,11 @@ void PhiReso_track_grouped()
    h_PhiReso_Width_track_E_17__859->SetEntries(40);
    h_PhiReso_Width_track_E_17__859->SetStats(0);
 
-   ci = TColor::GetColor("#00cccc");
+   ci = TColor::GetColor("#cc00ff");
    h_PhiReso_Width_track_E_17__859->SetLineColor(ci);
    h_PhiReso_Width_track_E_17__859->SetLineWidth(2);
 
-   ci = TColor::GetColor("#00cccc");
+   ci = TColor::GetColor("#cc00ff");
    h_PhiReso_Width_track_E_17__859->SetMarkerColor(ci);
    h_PhiReso_Width_track_E_17__859->SetMarkerStyle(42);
    h_PhiReso_Width_track_E_17__859->SetMarkerSize(1.8);

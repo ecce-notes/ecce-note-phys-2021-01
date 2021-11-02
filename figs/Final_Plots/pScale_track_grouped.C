@@ -1,7 +1,7 @@
 void pScale_track_grouped()
 {
 //=========Macro generated from canvas: canvasJES/
-//=========  (Mon Oct 18 19:34:41 2021) by ROOT version 6.22/02
+//=========  (Mon Nov  1 23:38:20 2021) by ROOT version 6.22/02
    TCanvas *canvasJES = new TCanvas("canvasJES", "",0,0,1000,900);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -63,11 +63,11 @@ void pScale_track_grouped()
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
-   ci = TColor::GetColor("#00cc00");
+   ci = TColor::GetColor("#0000ff");
    h_JES_track_p_15__241->SetLineColor(ci);
    h_JES_track_p_15__241->SetLineWidth(2);
 
-   ci = TColor::GetColor("#00cc00");
+   ci = TColor::GetColor("#0000ff");
    h_JES_track_p_15__241->SetMarkerColor(ci);
    h_JES_track_p_15__241->SetMarkerStyle(28);
    h_JES_track_p_15__241->SetMarkerSize(1.5);
@@ -124,11 +124,11 @@ void pScale_track_grouped()
    h_JES_track_p_16__242->SetEntries(40);
    h_JES_track_p_16__242->SetStats(0);
 
-   ci = TColor::GetColor("#669966");
+   ci = TColor::GetColor("#ff0000");
    h_JES_track_p_16__242->SetLineColor(ci);
    h_JES_track_p_16__242->SetLineWidth(2);
 
-   ci = TColor::GetColor("#669966");
+   ci = TColor::GetColor("#ff0000");
    h_JES_track_p_16__242->SetMarkerColor(ci);
    h_JES_track_p_16__242->SetMarkerStyle(30);
    h_JES_track_p_16__242->SetMarkerSize(1.8);
@@ -188,11 +188,11 @@ void pScale_track_grouped()
    h_JES_track_p_17__243->SetEntries(40);
    h_JES_track_p_17__243->SetStats(0);
 
-   ci = TColor::GetColor("#00cccc");
+   ci = TColor::GetColor("#cc00ff");
    h_JES_track_p_17__243->SetLineColor(ci);
    h_JES_track_p_17__243->SetLineWidth(2);
 
-   ci = TColor::GetColor("#00cccc");
+   ci = TColor::GetColor("#cc00ff");
    h_JES_track_p_17__243->SetMarkerColor(ci);
    h_JES_track_p_17__243->SetMarkerStyle(42);
    h_JES_track_p_17__243->SetMarkerSize(1.8);

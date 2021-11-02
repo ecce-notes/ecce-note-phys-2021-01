@@ -5,9 +5,7 @@ In addition to finding jets in the tracking system, ECCE's full hermetic coverag
 
 To improve the collection of energy in the calorimeters, the towers are group together with clustering algorithms to try to make each cluster contain all the energy of a single particle.  Two algorithms in particular have been utilized in this analysis, V3 and MA clustering.
 
-V3 clustering is used in \todo{Which detectors?}.  It works by creating a new cluster at the most energetic tower, and adding its cardinal neighbors to it if they have less energy, but still greater than a aggregation energy parameter.  This recurses until all neighboring towers have either less energy than the aggregation energy, or greater than the current tower's energy.
-
-The MA clustering algorithm is similar, except it will for clusters along diagonals as well as the cardinal directions.  It is used in the \todo{which?} calorimeters.  
+V3 clustering works by starting a cluster at the most energetic tower, and adding its cardinal neighbors to it if they have less energy, but still greater than a aggregation energy parameter.  This recurses until all neighboring towers have either less energy than the aggregation energy, or greater than the current tower's energy.  The MA clustering algorithm is similar, except it will for clusters along diagonals as well as the cardinal directions.  
 
 Both algorithms create clusters which contain the total energy accumulated among the clustered towers and has a position given by the position of each tower weighted by its energy contribution.  These clusters are then used as the input of the jet finding algorithm.  
 
@@ -19,14 +17,14 @@ Tuning clustering algorithms remains an ongoing process, the particular algorith
     \begin{subfigure}{0.4\textwidth}
         \centering
         \includegraphics[width=\linewidth]{figs/Final_Plots/JES_calo_grouped.pdf}
-        \caption{Calorimetry jets scale}
+        \caption{Calorimetry jets scale, using both hadronic and electromagnetic calorimeters.  The scale for the forward region is good, within 15\% at energies above 50 GeV.  The central and backward regions are areas where the tuning of calorimeter clustering and calibration is still ongoing, thus the poor scale.}
         \label{fig:calo_energy_scale}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.4\textwidth}
         \centering
         \includegraphics[width=\linewidth]{figs/Final_Plots/JER_E_calo_grouped.pdf}
-        \caption{Calorimetry jet resolution}
+        \caption{Calorimetry jet resolution.  Despite the poor scale in the central and backward region, the resolution remains good, indicating a small distribution of reconstructed energies for a particular truth energy.}
         \label{fig:calo_energy_resolution}
     \end{subfigure}
     \caption{The scale and resolution of the energy of calorimetry jets.}
@@ -50,6 +48,6 @@ Tuning clustering algorithms remains an ongoing process, the particular algorith
         \caption{Calorimetry jet $\phi$ resolution}
         \label{fig:calo_phi_resolution}
     \end{subfigure}
-    \caption{The spatial resolution of calorimetry jets}
+    \caption{The spatial resolution of calorimetry jets.  Since jet matching is done in $\eta-\phi$ space, the poor energy scale for the central and backward regions should have a minimal affect on the spatial resolution.}
     \label{fig:calo_spatial_reso_scale}
 \end{figure}

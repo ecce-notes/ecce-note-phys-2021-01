@@ -1,7 +1,7 @@
 void EtaReso_track_grouped()
 {
 //=========Macro generated from canvas: canvasJES/
-//=========  (Mon Oct 18 19:34:42 2021) by ROOT version 6.22/02
+//=========  (Mon Nov  1 23:38:20 2021) by ROOT version 6.22/02
    TCanvas *canvasJES = new TCanvas("canvasJES", "",0,0,1000,900);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
@@ -62,11 +62,11 @@ void EtaReso_track_grouped()
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
-   ci = TColor::GetColor("#00cc00");
+   ci = TColor::GetColor("#0000ff");
    h_EtaReso_Width_track_E_15__769->SetLineColor(ci);
    h_EtaReso_Width_track_E_15__769->SetLineWidth(2);
 
-   ci = TColor::GetColor("#00cc00");
+   ci = TColor::GetColor("#0000ff");
    h_EtaReso_Width_track_E_15__769->SetMarkerColor(ci);
    h_EtaReso_Width_track_E_15__769->SetMarkerStyle(28);
    h_EtaReso_Width_track_E_15__769->SetMarkerSize(1.5);
@@ -123,11 +123,11 @@ void EtaReso_track_grouped()
    h_EtaReso_Width_track_E_16__770->SetEntries(40);
    h_EtaReso_Width_track_E_16__770->SetStats(0);
 
-   ci = TColor::GetColor("#669966");
+   ci = TColor::GetColor("#ff0000");
    h_EtaReso_Width_track_E_16__770->SetLineColor(ci);
    h_EtaReso_Width_track_E_16__770->SetLineWidth(2);
 
-   ci = TColor::GetColor("#669966");
+   ci = TColor::GetColor("#ff0000");
    h_EtaReso_Width_track_E_16__770->SetMarkerColor(ci);
    h_EtaReso_Width_track_E_16__770->SetMarkerStyle(30);
    h_EtaReso_Width_track_E_16__770->SetMarkerSize(1.8);
@@ -184,11 +184,11 @@ void EtaReso_track_grouped()
    h_EtaReso_Width_track_E_17__771->SetEntries(40);
    h_EtaReso_Width_track_E_17__771->SetStats(0);
 
-   ci = TColor::GetColor("#00cccc");
+   ci = TColor::GetColor("#cc00ff");
    h_EtaReso_Width_track_E_17__771->SetLineColor(ci);
    h_EtaReso_Width_track_E_17__771->SetLineWidth(2);
 
-   ci = TColor::GetColor("#00cccc");
+   ci = TColor::GetColor("#cc00ff");
    h_EtaReso_Width_track_E_17__771->SetMarkerColor(ci);
    h_EtaReso_Width_track_E_17__771->SetMarkerStyle(42);
    h_EtaReso_Width_track_E_17__771->SetMarkerSize(1.8);
